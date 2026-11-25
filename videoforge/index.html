@@ -3,34 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VideoForge</title>
-<meta name="description" content="VideoForge: a private tool that publishes the Null Pointer channel's own videos to YouTube, Instagram and X.">
+<title>video-forge</title>
+<meta name="description" content="video-forge: a private tool that uploads the Null Pointer channel's own approved explainer videos to its own YouTube channel, and shares them on Instagram and X.">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <main>
-<nav><a href="/videoforge/">VideoForge</a><a href="/videoforge/privacy/">Privacy policy</a><a href="/videoforge/terms/">Terms of service</a></nav>
-<h1>VideoForge</h1>
-<p>VideoForge is a private, single-user tool that publishes the
-<a href="https://www.youtube.com/@nullpointer-c9k">Null Pointer</a> channel's own explainer videos.
-It runs on its operator's own computer and acts only on the operator's own accounts.</p>
+<nav><a href="/videoforge/">video-forge</a><a href="/videoforge/privacy/">Privacy policy</a><a href="/videoforge/terms/">Terms of service</a></nav>
+<h1>video-forge</h1>
+<p>video-forge (also written VideoForge) is a private, single-user publishing tool for the
+<a href="https://www.youtube.com/@nullpointer-c9k">Null Pointer</a> YouTube channel, which publishes
+educational explainer videos about software engineering and large-scale systems. It runs on its
+operator's own computer and acts only on the operator's own accounts. It is not offered to the
+public and has no sign-up.</p>
 
-<h2>What it does</h2>
+<h2>Purpose</h2>
+<p>When the operator has finished and personally approved an episode, video-forge publishes it so it
+does not have to be uploaded by hand:</p>
 <ul>
-  <li>Uploads the channel's long videos and Shorts to YouTube, with their titles, descriptions,
-    thumbnails, captions and playlists, after the operator has watched and approved each one.</li>
-  <li>Posts the approved Shorts to the channel's Instagram account as Reels.</li>
-  <li>Posts short insights from each video, with a link to it, to the channel's X account on a schedule.</li>
+  <li><strong>YouTube:</strong> uploads the episode's long video and its Shorts to the operator's own
+    channel, with the title, description, tags, thumbnail, captions and playlist the operator wrote.</li>
+  <li><strong>Instagram:</strong> posts the approved Shorts to the channel's own Instagram account as Reels.</li>
+  <li><strong>X:</strong> posts short text insights from the episode, each with a diagram from the video
+    and a link to it, to the channel's own X account on a schedule.</li>
 </ul>
 
-<h2>Who can use it</h2>
-<p>Only its operator. VideoForge is not offered to the public, has no sign-up, and does not access
-anyone else's accounts or data.</p>
+<h2>How it uses Google user data</h2>
+<p>video-forge signs in to the operator's own Google account with the YouTube Data API and uses that
+access only to:</p>
+<ul>
+  <li>upload the operator's approved videos and Shorts, and set their thumbnails and captions;</li>
+  <li>find or create the channel's playlists and add uploaded videos to them;</li>
+  <li>check whether an uploaded video is public yet;</li>
+  <li>read the signed-in channel's ID and name, so uploads can never go to the wrong channel.</li>
+</ul>
+<p>It does not read anyone else's data, does not read or change comments or ratings, does not delete
+videos, and does not share Google user data with anyone. Details are in the
+<a href="/videoforge/privacy/">privacy policy</a>.</p>
 
-<p>How VideoForge handles account data is described in its <a href="/videoforge/privacy/">privacy policy</a>.</p>
+<h2>What it does not do</h2>
+<p>video-forge does not generate, edit or upload images or video of real people. The videos it
+publishes are the channel's own finished explainers: diagrams, charts and narration about technical
+topics. It is never used to create or distribute sexual, intimate or non-consensual imagery of
+anyone, including AI-generated imagery.</p>
 
-<footer>VideoForge uses YouTube API Services. <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
-<a href="https://policies.google.com/privacy">Google Privacy Policy</a></footer>
+<footer>video-forge uses YouTube API Services. <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a> ·
+<a href="/videoforge/privacy/">video-forge privacy policy</a></footer>
 </main>
 </body>
 </html>
